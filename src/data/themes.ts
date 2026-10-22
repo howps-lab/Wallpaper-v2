@@ -11,7 +11,7 @@ export const THEMES: WallpaperTheme[] = [
     description: 'An open-air cinematic expanse bathed in crisp daylight, where gentle Tuscan contours merge with cool crystalline azure horizons.',
     atmosphereMood: 'Expansive · Pristine · Serene',
     locationConcept: 'Tuscan Uplands & Skyway Basin',
-    videoSrc: '/videos/summer_day.mp4',
+    videoSrc: '/videos/summer_day_01.mp4',
     posterSrc: '/images/summer_day_poster.jpg',
     colors: {
       primaryAccent: '#55D9F5',
@@ -47,7 +47,7 @@ export const THEMES: WallpaperTheme[] = [
     description: 'A poetic golden-hour landscape captured as the sun descends past rugged jagged ridges, sweeping warm copper dusk through whispering grasslands.',
     atmosphereMood: 'Cinematic · Nostalgic · Radiant',
     locationConcept: 'Grand Teton Crest & Amber Valley',
-    videoSrc: '/videos/sunset_field.mp4',
+    videoSrc: '/videos/sunset_field_01.mp4',
     posterSrc: '/images/sunset_field_poster.jpg',
     colors: {
       primaryAccent: '#FF9A55',
