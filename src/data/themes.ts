@@ -83,8 +83,8 @@ export const THEMES: WallpaperTheme[] = [
     description: 'A rain-slicked metropolitan future where towering glass towers glow with subtle violet and electric cyan neon accents against the obsidian night.',
     atmosphereMood: 'Futuristic · Enigmatic · Electric',
     locationConcept: 'Neo-Metropolis Sector 09',
-    videoSrc: '/videos/night_time.mp4',
-    posterSrc: '/images/night_time_poster.jpg',
+    videoSrc: '/videos/night_time_01.mp4',
+    posterSrc: '/images/night_time_poster_01.jpg',
     colors: {
       primaryAccent: '#A78BFA',
       secondaryAccent: '#49D9FF',
