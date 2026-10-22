@@ -1,0 +1,6 @@
+{
+  "name": "AFTERGLOW — Cinematic Wallpaper Slider",
+  "description": "An immersive, editorial cinematic wallpaper gallery featuring looping video backgrounds, dynamic atmospheric color grading, wallpaper previews, and smooth transitions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
