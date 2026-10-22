@@ -35,12 +35,12 @@ export const BackgroundVideo: React.FC<BackgroundVideoProps> = ({
 }) => {
   return (
     <div className="fixed inset-0 w-full h-[100dvh] -z-10 overflow-hidden select-none bg-[#05070c]">
-      {/* 1. Underlying Poster Image Fallback Layer */}
+      {/* 1. Underlying Poster Image Fallback Layer (Opacity increased by 60% from 30% to 90%) */}
       <img
         src={currentTheme.posterSrc}
         alt={currentTheme.name}
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-out ${
-          isLoaded && !hasError ? 'opacity-30' : 'opacity-100'
+          isLoaded && !hasError ? 'opacity-90' : 'opacity-100'
         }`}
         referrerPolicy="no-referrer"
       />
@@ -93,23 +93,23 @@ export const BackgroundVideo: React.FC<BackgroundVideoProps> = ({
         />
       )}
 
-      {/* 4. Atmospheric Color Grading Scrim */}
+      {/* 4. Atmospheric Color Grading Scrim - lightened by 60% for vivid video clarity */}
       <div
-        className="absolute inset-0 transition-all duration-1000 pointer-events-none"
+        className="absolute inset-0 transition-all duration-1000 pointer-events-none opacity-40"
         style={{
           background: currentTheme.colors.overlayGradient,
         }}
       />
 
-      {/* 5. Contrast Enhancer Scrim for Text Readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-black/60 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/40 pointer-events-none" />
+      {/* 5. Contrast Enhancer Scrim - reduced darkness by 60% so video shows with high opacity */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/10 to-black/25 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/15 pointer-events-none" />
 
       {/* 6. Subtle Film Grain Texture */}
-      <div className="absolute inset-0 film-grain pointer-events-none opacity-40 mix-blend-overlay" />
+      <div className="absolute inset-0 film-grain pointer-events-none opacity-25 mix-blend-overlay" />
 
       {/* 7. Subtle Vignette Border */}
-      <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_120px_rgba(0,0,0,0.85)]" />
+      <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_80px_rgba(0,0,0,0.4)]" />
 
       {/* 8. Autoplay Recovery Prompt if Paused upon entry */}
       {!isPlaying && (
